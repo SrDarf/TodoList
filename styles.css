@@ -227,10 +227,11 @@ button:hover {
     position: fixed;
     bottom: 20px;
     left: 50%;
-    width: 20%;
-    height: 17%;
+    width: 80%;
+    max-width: 400px; /* Define uma largura máxima */
+    height: auto; /* Ajusta a altura automaticamente */
     transform: translateX(-50%);
-    z-index: 1000; 
+    z-index: 1000;
     background-color: #0a0a0aef;
     color: white;
     padding: 10px 20px;
@@ -239,6 +240,17 @@ button:hover {
     text-align: center;
     transition: opacity 0.3s ease;
 }
+
+@media (max-width: 700px) {
+    .toast {
+        width: 100vh; /* Aumenta a largura para dispositivos menores */
+        position: absolute;
+        font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
+        text-wrap: nowrap;
+        color: white;
+    }
+}
+
 
 .show-toast {
     opacity: 1;
