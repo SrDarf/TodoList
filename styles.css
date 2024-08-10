@@ -228,8 +228,8 @@ button:hover {
     bottom: 20px;
     left: 50%;
     width: 80%;
-    max-width: 400px; /* Define uma largura máxima */
-    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 400px; 
+    height: auto; 
     transform: translateX(-50%);
     z-index: 1000;
     background-color: #0a0a0aef;
@@ -243,9 +243,9 @@ button:hover {
 
 @media (max-width: 700px) {
     .toast {
-        width: 100vh; /* Aumenta a largura para dispositivos menores */
+        width: 100vh; 
         position: absolute;
-        font-size: 14px; /* Ajusta o tamanho da fonte para telas pequenas */
+        font-size: 14px; 
         text-wrap: nowrap;
         color: white;
     }
