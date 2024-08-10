@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stars.css">
+    <title>Suri's | TodoList</title>
+</head>
+<body id="body">
+    <div class="toast" id="errorToast">Please, fill all the fields</div>
+    <div class="stars-bg">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+
+
+
+    <!-- Adicione isto ao seu HTML -->
+<div class="no-todos-message" id="noTodosMessage">
+    <p>Você ainda não tem nenhuma tarefa. Clique no botão abaixo para adicionar uma nova tarefa!</p>
+</div>
+
+
+    <div class="todo-list-container"></div>
+
+    <div class="add-todo-button">+</div>
+
+    
+
+    <div class="todo-modal">
+        <div class="modal-content">
+            <center><h2>Criar Nova Tarefa</h2></center> 
+            <input type="text" id="todo-name" placeholder="Nome da Tarefa" required>
+            <textarea id="todo-description" placeholder="Descrição" maxlength="200"></textarea>
+            <div class="color-picker-container">
+                <i class="fas fa-paint-brush color"></i>
+                <input type="color" id="todo-color" value="#FF6F61">
+            </div>
+            <button id="create-todo">Criar</button>
+            <button id="cancel-todo">Cancelar</button>
+        </div>
+    </div>
+
+
+
+
+<div class="toast" id="toast">
+    <p>Tem certeza de que deseja apagar esta tarefa?</p>
+    <button id="confirm-delete">Sim</button>
+    <button id="cancel-delete">Não</button>
+</div>
+
+    
+
+<script src="index.js"></script>
+</body>
+</html>
+
