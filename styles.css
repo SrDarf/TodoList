@@ -125,6 +125,7 @@ textarea:hover {
     color: white;
     font-size: 2.5em;
     display: flex;
+    z-index: 99999;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -248,6 +249,10 @@ button:hover {
         font-size: 14px; 
         text-wrap: nowrap;
         color: white;
+    }
+
+    .todo-modal{
+        background-color: #000000;
     }
 }
 
